@@ -1,6 +1,6 @@
 let express = require('express')
 let cors = require('cors')
-//
+//5555555
 
 const PORT = process.env.PORT || 1234
 
@@ -66,7 +66,7 @@ app.post('/api/user', (req, res) => {
 })
 
 app.get('/api/posts', async (req, res) => {
-    client.query(/* ใส่ query string ให้แสดงค่าทั้งหมด ใน table posts */'SELECT * FROM table posts', (err, data) => {
+    client.query(/* ใส่ query string ให้แสดงค่าทั้งหมด ใน table posts */'SELECT * FROM post', (err, data) => {
         if (err) {
             console.log(err.stack)
         } else {
